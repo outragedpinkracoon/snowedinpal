@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/json/3166?key=2530e7e3-b539-4e21-b7c9-1d7db71ebdd9&res=daily
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - WaveServer 1.0
+      Etag:
+      - '1545259238034'
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2317'
+      Webserver:
+      - "-PROD-01"
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, no-transform, must-revalidate, max-age=3262
+      Expires:
+      - Wed, 19 Dec 2018 23:39:36 GMT
+      Date:
+      - Wed, 19 Dec 2018 22:45:14 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"SiteRep":{"Wx":{"Param":[{"name":"FDm","units":"C","$":"Feels Like
+        Day Maximum Temperature"},{"name":"FNm","units":"C","$":"Feels Like Night
+        Minimum Temperature"},{"name":"Dm","units":"C","$":"Day Maximum Temperature"},{"name":"Nm","units":"C","$":"Night
+        Minimum Temperature"},{"name":"Gn","units":"mph","$":"Wind Gust Noon"},{"name":"Gm","units":"mph","$":"Wind
+        Gust Midnight"},{"name":"Hn","units":"%","$":"Screen Relative Humidity Noon"},{"name":"Hm","units":"%","$":"Screen
+        Relative Humidity Midnight"},{"name":"V","units":"","$":"Visibility"},{"name":"D","units":"compass","$":"Wind
+        Direction"},{"name":"S","units":"mph","$":"Wind Speed"},{"name":"U","units":"","$":"Max
+        UV Index"},{"name":"W","units":"","$":"Weather Type"},{"name":"PPd","units":"%","$":"Precipitation
+        Probability Day"},{"name":"PPn","units":"%","$":"Precipitation Probability
+        Night"}]},"DV":{"dataDate":"2018-12-19T22:00:00Z","type":"Forecast","Location":{"i":"3166","lat":"55.928","lon":"-3.343","name":"EDINBURGH\/GOGARBANK","country":"SCOTLAND","continent":"EUROPE","elevation":"57.0","Period":[{"type":"Day","value":"2018-12-19Z","Rep":[{"D":"S","Gn":"20","Hn":"73","PPd":"0","S":"9","V":"VG","Dm":"8","FDm":"6","W":"1","U":"1","$":"Day"},{"D":"ESE","Gm":"11","Hm":"87","PPn":"50","S":"4","V":"VG","Nm":"4","FNm":"3","W":"7","$":"Night"}]},{"type":"Day","value":"2018-12-20Z","Rep":[{"D":"SSW","Gn":"18","Hn":"89","PPd":"80","S":"9","V":"VG","Dm":"8","FDm":"4","W":"12","U":"1","$":"Day"},{"D":"SW","Gm":"22","Hm":"89","PPn":"41","S":"9","V":"VG","Nm":"4","FNm":"3","W":"7","$":"Night"}]},{"type":"Day","value":"2018-12-21Z","Rep":[{"D":"WSW","Gn":"11","Hn":"92","PPd":"19","S":"7","V":"GO","Dm":"7","FDm":"5","W":"7","U":"1","$":"Day"},{"D":"NW","Gm":"9","Hm":"96","PPn":"57","S":"4","V":"MO","Nm":"3","FNm":"2","W":"7","$":"Night"}]},{"type":"Day","value":"2018-12-22Z","Rep":[{"D":"WSW","Gn":"20","Hn":"89","PPd":"6","S":"11","V":"VG","Dm":"8","FDm":"4","W":"7","U":"1","$":"Day"},{"D":"SW","Gm":"18","Hm":"92","PPn":"18","S":"9","V":"VG","Nm":"4","FNm":"3","W":"7","$":"Night"}]},{"type":"Day","value":"2018-12-23Z","Rep":[{"D":"SW","Gn":"11","Hn":"95","PPd":"51","S":"7","V":"MO","Dm":"7","FDm":"5","W":"12","U":"1","$":"Day"},{"D":"NNW","Gm":"11","Hm":"96","PPn":"52","S":"4","V":"GO","Nm":"2","FNm":"0","W":"7","$":"Night"}]}]}}}}'
+    http_version: 
+  recorded_at: Wed, 19 Dec 2018 22:45:14 GMT
+recorded_with: VCR 3.0.3
